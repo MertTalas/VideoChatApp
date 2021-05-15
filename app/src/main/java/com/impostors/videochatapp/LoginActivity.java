@@ -49,16 +49,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         firebaseAuth=FirebaseAuth.getInstance();
-        // firebaseAuth.signOut();
-        if(firebaseAuth.getCurrentUser()==null){
-            startActivity(new Intent(LoginActivity.this,MainPage.class));
-        }
+
+
         init();
         mCallbacks= new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
                 signInWithPhoneAuthCredential(phoneAuthCredential);
-
 
 
             }
@@ -119,6 +116,14 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(!(firebaseAuth.getCurrentUser()==null)){
+            startActivity(new Intent(LoginActivity.this,MainPage.class));
+        }
     }
 
     private void verifyPhoneNumberWithCode(String mVerificationId, String code) {
