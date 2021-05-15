@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VideoChatApp">
+        <activity android:name=".MainPage"></activity>
         <activity
             android:name=".SplashScreenActivity"
             android:screenOrientation="portrait">
