@@ -1,6 +1,6 @@
 <resources>
     <style name="Theme.VideoChatApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/koyukırmızı</item>
+        <item name="colorPrimary">@color/butonkırmızı</item>
         <item name="colorSecondary">@color/acıkkırmızı</item>
         <item name="colorControlActivated">@color/yesil</item>
         <item name="colorPrimaryDark">@color/black</item>
