@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "4989005895",
+    "firebase_url": "https://videochat-48d9a-default-rtdb.firebaseio.com",
+    "project_id": "videochat-48d9a",
+    "storage_bucket": "videochat-48d9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4989005895:android:72e8d4197a1d1e1394c162",
+        "android_client_info": {
+          "package_name": "com.impostors.videochatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4989005895-oi95s3csq5lr0jr75rqlbg1er9m42hi2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.impostors.videochatapp",
+            "certificate_hash": "d8881c7184dff389e24cabba8a0a41f9e1d0fd85"
+          }
+        },
+        {
+          "client_id": "4989005895-ak55h2861033pp86bv4410taf89imd47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2tvXLqxAgBqDJN3DYje1uS3w-kn7OstI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4989005895-ak55h2861033pp86bv4410taf89imd47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
