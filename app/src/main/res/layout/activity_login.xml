@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red_gradient"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextEnterPhoneNumber"
+        android:layout_width="342dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/open_sans"
+        android:hint="+90xxxxxxxxxx"
+        android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnterPhoneNumber" />
+
+    <EditText
+        android:id="@+id/editTextVerificationCode"
+        android:layout_width="342dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/open_sans"
+        android:hint="Kodu Giriniz"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerificationCode" />
+
+    <Button
+        android:id="@+id/buttonSentCode"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/open_sans"
+        android:text="KOD GÖNDER"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnterPhoneNumber" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/open_sans"
+        android:text="GİRİŞ YAP"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResendCode" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEnterPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Devam Etmek İçin Lütfen Telefon Numaranızı Giriniz"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconPhone" />
+
+    <TextView
+        android:id="@+id/textViewVerificationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Telefonunuza Gelen Doğrulama Kodunu Giriniz"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSentCode" />
+
+    <TextView
+        android:id="@+id/textViewResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="OTP alamadınız mı? "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVerificationCode" />
+
+    <TextView
+        android:id="@+id/textViewClickableResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Tekrar Gönder"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/textViewResendCode"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVerificationCode" />
+
+    <ImageButton
+        android:id="@+id/iconPhone"
+        android:layout_width="55dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/koyukırmızı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        app:srcCompat="@drawable/icon_phone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
