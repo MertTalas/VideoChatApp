@@ -31,7 +31,6 @@ public class MainPage extends AppCompatActivity {
         btnLogout=findViewById(R.id.btnLogout);
         mAuth=FirebaseAuth.getInstance();
         btnJoin=findViewById(R.id.btnJoin);
-        btnShare=findViewById(R.id.btnShare);
         participationCode=findViewById(R.id.editTextTextParticipationCode);
 
         URL serverURL;
@@ -57,12 +56,6 @@ public class MainPage extends AppCompatActivity {
                         .setWelcomePageEnabled(false)
                         .build();
                 JitsiMeetActivity.launch(MainPage.this,options);
-
-            }
-        });
-        btnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
             }
         });
