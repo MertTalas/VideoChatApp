@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">VideoChatApp</string>
+    <string name="app_name">VideoChatApp </string>
+    <string name="login">Login </string>
+    <string name="join">Join </string>
+    <string name="share">Share </string>
+    <string name="logOut">Log-Out </string>
+    <string name="participationCode">Participation Code </string>
+    <string name="enterTheCode">Enter The Code </string>
+    <string name="sendCode">Send Code </string>
+    <string name="enterPhoneForContinue">Please Enter Your Phone Number to Continue </string>
+    <string name="enterVerificationCode">Enter the Verification Code Received to Your Phone </string>
+    <string name="OTPmissed">" Didn't get OTP? "</string>
+    <string name="sendAgain">"Send It Again! "</string>
+    <string name="videoChat">"Video Chat! "</string>
+    <string name="stillNotRegistered">"Still Not Registered? "</string>
+
+
 </resources>

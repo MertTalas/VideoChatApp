@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VideoChatApp</string>
+    <string name="login">Giriş Yap</string>
+    <string name="join">Katıl</string>
+    <string name="share">Paylaş</string>
+    <string name="logOut">Çıkış Yap</string>
+    <string name="participationCode">Katılım Kodu</string>
+    <string name="enterTheCode">Kodu Girin</string>
+    <string name="sendCode">Kod Gönder</string>
+    <string name="enterVerificationCode">Telefonunuza Gelen Doğrulama Kodunu Giriniz</string>
+    <string name="enterPhoneForContinue">Devam Etmek İçin Telefon Numaranızı Giriniz</string>
+    <string name="OTPmissed">OTP Alamadınız Mı? </string>
+    <string name="sendAgain">Tekrar Gönder! </string>
+    <string name="videoChat">Görüntülü Sohbet! </string>
+    <string name="stillNotRegistered">Hala Kayıt Olmadın Mı? </string>
+</resources>
