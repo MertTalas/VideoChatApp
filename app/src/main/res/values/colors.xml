@@ -18,4 +18,5 @@
     <color name="acıkkırmızı">#DEB9B7</color>
     <color name="koyukırmızı">#DE7F77</color>
     <color name="butonkırmızı">#DF6B61</color>
+    <color name="textcolor">#000000</color>
 </resources>

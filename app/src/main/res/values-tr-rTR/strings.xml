@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VideoChatApp</string>
+    <string name="app_name">Görüntülü Sohbet</string>
     <string name="login">Giriş Yap</string>
     <string name="join">Katıl</string>
     <string name="share">Paylaş</string>
@@ -14,4 +14,7 @@
     <string name="sendAgain">Tekrar Gönder! </string>
     <string name="videoChat">Görüntülü Sohbet! </string>
     <string name="stillNotRegistered">Hala Kayıt Olmadın Mı? </string>
+    <string name="light">Aydınlık</string>
+    <string name="dark">Karanlık</string>
+    <string name="switchText" translatable="false">Gece Modu</string>
 </resources>

@@ -1,12 +1,17 @@
 package com.impostors.videochatapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -19,7 +24,7 @@ import java.net.URL;
 
 public class MainPage extends AppCompatActivity {
     private Button btnLogout,btnShare,btnJoin;
-    FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
     private EditText participationCode;
 
 
@@ -32,6 +37,7 @@ public class MainPage extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         btnJoin=findViewById(R.id.btnJoin);
         participationCode=findViewById(R.id.editTextTextParticipationCode);
+
 
         URL serverURL;
         try{

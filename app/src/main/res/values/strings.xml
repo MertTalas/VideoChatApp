@@ -13,6 +13,9 @@
     <string name="sendAgain">"Send It Again! "</string>
     <string name="videoChat">"Video Chat! "</string>
     <string name="stillNotRegistered">"Still Not Registered? "</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="switchText">Light Mode</string>
 
 
 </resources>
