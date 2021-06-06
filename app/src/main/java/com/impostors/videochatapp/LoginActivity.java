@@ -28,6 +28,7 @@ import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import org.w3c.dom.Text;
 
@@ -126,7 +127,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(!(firebaseAuth.getCurrentUser()==null)){
-            startActivity(new Intent(LoginActivity.this,MainPage.class));
+            startActivity(new Intent(LoginActivity.this,MainEkstra.class));
         }
     }
 
@@ -176,7 +177,7 @@ public class LoginActivity extends AppCompatActivity {
                 String phone=firebaseAuth.getCurrentUser().getPhoneNumber();
                 Toast.makeText(mcontext,"Logged in as "+phone,Toast.LENGTH_LONG).show();
                 myRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("phone_number").setValue(txtPhone.getText().toString());
-                startActivity(new Intent(LoginActivity.this,MainPage.class));
+                startActivity(new Intent(LoginActivity.this,MainEkstra.class));
 
             }
         }).addOnFailureListener(new OnFailureListener() {
