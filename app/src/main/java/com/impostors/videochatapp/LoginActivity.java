@@ -2,6 +2,8 @@ package com.impostors.videochatapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -12,6 +14,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     private Context mcontext;
     private Button btnVerify,btnContinue;
     private TextView txtPhone,txtCode,txtResend;
+
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
