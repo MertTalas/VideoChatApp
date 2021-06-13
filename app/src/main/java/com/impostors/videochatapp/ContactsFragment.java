@@ -29,14 +29,14 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class ContactsFragment extends Fragment {
-    Button addContactbtn;
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
-    FirebaseAuth auth;
-    FirebaseUser firebaseUser;
-    RecyclerView recyclerView;
-    ContactAdapter adapter;
-    Activity context;
+    private Button addContactbtn;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
+    private FirebaseAuth auth;
+    private FirebaseUser firebaseUser;
+    private RecyclerView recyclerView;
+    private ContactAdapter adapter;
+    private Activity context;
 
     @Nullable
     @Override
@@ -55,12 +55,16 @@ public class ContactsFragment extends Fragment {
             @Override
             public void onClick(View v) { View editTextAlert = getLayoutInflater().inflate(R.layout.alert_addcontact, null);
                 AlertDialog.Builder ad = new AlertDialog.Builder(context);
-                ad.setMessage("Kişi Bilgileri");
-                ad.setTitle("Yeni Kişi ekle");
+                //ad.setMessage("Kişi Bilgileri");
+                ad.setMessage(getActivity().getApplicationContext().getString(R.string.contactInformation));
+
+                //ad.setTitle("Yeni Kişi ekle");
+                ad.setMessage(getActivity().getApplicationContext().getString(R.string.addNewContact));
+
                 final EditText InsertedContactName = editTextAlert.findViewById(R.id.editTextContactName);
                 final EditText InsertedContactPhoneNumber= editTextAlert.findViewById(R.id.editTextContactPhoneNumber);
                 ad.setView(editTextAlert);
-                ad.setPositiveButton("Ekle", new DialogInterface.OnClickListener() {
+                ad.setPositiveButton(getActivity().getApplicationContext().getString(R.string.add), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         final String ContactName = InsertedContactName.getText().toString();
@@ -68,7 +72,8 @@ public class ContactsFragment extends Fragment {
 
                         if (TextUtils.isEmpty(ContactPhone) || TextUtils.isEmpty(ContactName)
                         ) {
-                            Toast.makeText(context, "Gerekli Alanları Doldurunuz", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(context, "Gerekli Alanları Doldurunuz", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, getActivity().getApplicationContext().getString(R.string.fillTheNecesseryBlankets), Toast.LENGTH_SHORT).show();
                         } else {
                             final Query query = databaseReference.orderByKey().equalTo(firebaseUser.getUid());
                             query.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -86,7 +91,7 @@ public class ContactsFragment extends Fragment {
                             });
                         }
                     }
-                }).setNegativeButton("İptal", new DialogInterface.OnClickListener() {
+                }).setNegativeButton(getActivity().getApplicationContext().getString(R.string.cancel), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                     }
