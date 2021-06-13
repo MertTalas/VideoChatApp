@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Görüntülü Sohbet</string>
+<resources> <string name="app_name">Görüntülü Sohbet</string>
     <string name="login">Giriş Yap</string>
     <string name="join">Katıl</string>
     <string name="share">Paylaş</string>
@@ -16,26 +15,9 @@
     <string name="stillNotRegistered">Hala Kayıt Olmadın Mı? </string>
     <string name="light">Aydınlık</string>
     <string name="dark">Karanlık</string>
-    <string name="switchText">Aydınlık Mod</string>
+    <string name="switchText">Karanlık Mod</string>
     <string name="personName">Kişi Adı</string>
     <string name="phoneNumber">Telefon Numarası</string>
     <string name="codeSent">Kod Gönderildi</string>
     <string name="codeVerify">Kod Doğrulanıyor...</string>
-    <string name="resendingCode">Kod Tekrar Gönderiliyor...</string>
-    <string name="phoneVerify">Telefon Numarası Doğrulanıyor...</string>
-    <string name="loggedInAs">Bu Numara İle Giriş Yapıldı: </string>
-    <string name="pleaseWait">Lütfen Bekleyiniz</string>
-    <string name="name">İsim</string>
-    <string name="phone">Telefon</string>
-    <string name="contactInformation">Kişi Bilgileri</string>
-    <string name="addNewContact">Yeni Kişi ekle</string>
-    <string name="add">Ekle</string>
-    <string name="cancel">İptal</string>
-    <string name="fillTheNecesseryBlankets">Gerekli Alanları Doldurunuz</string>
-    <string name="Conferance">Konferans</string>
-    <string name="privateContacts">Özel Kontaklar </string>
-    <string name="LoggingIn">Giriş Yapılıyor</string>
-    <string name="enterParticipationCode">Katılım Kodu Alanı Boş Olamaz!</string>
-    <string name="logOutSuccessful">Oturumu Kapatma Başarılı</string>
-
-</resources>
+    <string name="resendingCode">Kod Tekrar Gönderiliyor...</string></resources>

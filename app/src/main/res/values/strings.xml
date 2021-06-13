@@ -12,10 +12,30 @@
     <string name="OTPmissed">" Didn't get OTP? "</string>
     <string name="sendAgain">"Send It Again! "</string>
     <string name="videoChat">"Video Chat! "</string>
-    <string name="stillNotRegistered">"Still Not Registered? "</string>
+    <string name="stillNotRegistered">"Still Not Registered?  "</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
     <string name="switchText">Light Mode</string>
+    <string name="personName">Person Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="codeSent">Code Sent</string>
+    <string name="codeVerify">Verifying code...</string>
+    <string name="resendingCode">Resending Code...</string>
+    <string name="phoneVerify">Verifying Phone Number...</string>
+    <string name="loggedInAs">Logged in as </string>
+    <string name="pleaseWait">Please Wait</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="contactInformation">Contact Information</string>
+    <string name="addNewContact">Add New Contact</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="fillTheNecesseryBlankets">Fill Necessary Blankets</string>
+    <string name="Conferance">Conferance</string>
+    <string name="privateContacts">Private Contacts</string>
+    <string name="LoggingIn">Logging In</string>
+    <string name="enterParticipationCode">Enter Participation Code First!</string>
+    <string name="logOutSuccessful">Log-Out Successful</string>
 
 
 </resources>

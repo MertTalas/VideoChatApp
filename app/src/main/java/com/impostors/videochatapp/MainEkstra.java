@@ -30,8 +30,10 @@ public class MainEkstra extends AppCompatActivity {
 
         MyViewPagerAdapter adapter=new MyViewPagerAdapter(this);
         viewPager2.setAdapter(adapter);
-        fragmentheader.add("Konferans");
-        fragmentheader.add("Özel Kontaklar");
+        //fragmentheader.add("Konferans");
+        fragmentheader.add(getApplicationContext().getString(R.string.Conferance));
+        //fragmentheader.add("Özel Kontaklar");
+        fragmentheader.add(getApplicationContext().getString(R.string.privateContacts));
         new TabLayoutMediator(tablayout,viewPager2,(tab, position) -> tab.setText(fragmentheader.get(position))).attach();
     }
     private class MyViewPagerAdapter extends FragmentStateAdapter{

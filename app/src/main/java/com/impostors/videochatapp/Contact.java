@@ -1,7 +1,7 @@
 package com.impostors.videochatapp;
 
 public class Contact {
-    String phoneNumber,name,contact_id;
+    private String phoneNumber,name,contact_id;
 
     public Contact() {
     }
