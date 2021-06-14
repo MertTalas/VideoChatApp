@@ -262,7 +262,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onSuccess(AuthResult authResult) {
                 pd.dismiss();
                 String phone=firebaseAuth.getCurrentUser().getPhoneNumber();
-                Toast.makeText(mcontext,getApplicationContext().getString(R.string.loggedInAs) + phone,Toast.LENGTH_LONG).show();
+                Toast.makeText(mcontext,getApplicationContext().getString(R.string.loggedInAs) + " " + phone,Toast.LENGTH_LONG).show();
                 myRef.child("users").child(firebaseAuth.getCurrentUser().getUid()).child("phone_number").setValue(txtPhone.getText().toString());
                 startActivity(new Intent(LoginActivity.this,MainEkstra.class));
                 finish();

@@ -20,6 +20,6 @@
     <color name="koyukırmızı">#DE7F77</color>
     <color name="butonkırmızı">#DF6B61</color>
     <color name="textcolor">#000000</color>
-    <color name="hintColor">#E8D1D1</color>
-
+    <color name="hintColor">#6D0000</color>
+    <color name="orange">#FFA77B</color>
 </resources>
