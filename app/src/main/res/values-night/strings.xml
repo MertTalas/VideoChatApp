@@ -12,7 +12,7 @@
     <string name="OTPmissed">" Didn't get OTP? "</string>
     <string name="sendAgain">"Send It Again! "</string>
     <string name="videoChat">"Video Chat! "</string>
-    <string name="stillNotRegistered">"Still Not Registered? "</string>
+    <string name="stillNotRegistered">"Still Not Discovered? "</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
     <string name="switchText">Dark Mode</string>
